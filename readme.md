@@ -6,7 +6,7 @@ Possibilità di inserire prodotti e gestire il quantitativo e modificare la disp
 Generatore di Qr Code interno in fase di creazione del prodotto.
 Elenco prodotti con filtro per negozio.
 
-[Live Demo](https://qrcodes.tech)
+[Live Demo](https://pierw.github.io/gestionale-gasc/)
 
 
 ### MIT License

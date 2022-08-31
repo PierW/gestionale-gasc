@@ -7,11 +7,12 @@ const onGenerateSubmit = (e) => {
 
   clearUI();
 
-  const url = document.getElementById('url').value;
-  const size = document.getElementById('size').value;
+  const productName = document.getElementById('product-name').value;
+  const productQuantity = document.getElementById('product-quantity').value;
 
-  // Validate url
-  if (url === '') {
+
+  // Validate input
+  if (productName === '' || productQuantity === '') {
     alert('Per piacere compila tutti i campi!');
   } else {
     showSpinner();
@@ -19,7 +20,7 @@ const onGenerateSubmit = (e) => {
     // Show spinner for 1 sec
     setTimeout(() => {
       hideSpinner();
-      generateQRCode(url, size);
+      generateQRCode(productName);
 
       // Generate the save button after the qr code image src is ready
       setTimeout(() => {
@@ -33,11 +34,11 @@ const onGenerateSubmit = (e) => {
 };
 
 // Generate QR code
-const generateQRCode = (url, size) => {
+const generateQRCode = (productName) => {
   const qrcode = new QRCode('qrcode', {
-    text: url,
-    width: size,
-    height: size,
+    text: productName,
+    width: 300,
+    height: 300,
   });
 };
 
@@ -75,7 +76,7 @@ const createSaveBtn = (saveUrl) => {
   link.id = 'create-new-product';
   link.classList =
     'bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 rounded w-1/3 m-auto mt-5';
-  link.href = saveUrl;
+  link.href = '/';
   link.innerHTML = 'Crea nuovo prodotto';
 
   const link1 = document.createElement('a');

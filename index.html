@@ -63,6 +63,9 @@
           <p class="mb-4">
             Inserisci il prodotto e genera il Qr Code.
           </p>
+          <p>
+            <strong style="color: red;">NOTA:</strong> Se il prodotto è già presente in catalogo modifica quello già esistente.
+          </p>
 
           <form id="generate-form" class="mt-4">
             <input
@@ -81,13 +84,48 @@
 
             <select
             class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5"
-            name="place"
-            id="place"
+            name="type"
+            id="productType"
              >
-              <option value="0">Via Roma</option>
-              <option value="1">San Nicola</option>
-              <option value="2" selected>Cis</option>
+              <option value="0">Felpa</option>
+              <option value="1">T-Shirt</option>
+              <option value="2">Giacca</option>
+              <option value="3" selected>Giubbino</option>
+              <option value="4">Pantalone</option>
             </select>
+
+            <select
+            class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5"
+            name="meterial"
+            id="productMaterial"
+             >
+              <option value="0">Volpe</option>
+              <option value="1">Visone</option>
+              <option value="2" selected>Lepre</option>
+              <option value="3">Marmotta</option>
+              <option value="4">Cincilla</option>
+              <option value="5">Montone</option>
+              <option value="6">Camoscio</option>
+            </select>
+
+            <input list="productColorList" placeholder="Colore" id="productColor" name="color" class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5"
+            />
+            <datalist
+            id="productColorList"
+             >
+             <option value="Nero">
+             <option value="Blu">
+              <option value="Grigio">
+              <option value="Marrone">
+              <option value="Bianco">
+              <option value="Verde">
+              <option value="Rosa">
+              <option value="Cuoio">
+              <option value="Bordeaux">
+              <option value="Cammello">
+              <option value="Avorio">
+              <option value="Testa Di Moro">
+            </datalist>
 
             <select
             class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5"
@@ -109,6 +147,16 @@
               <option value="l">L</option>
               <option value="xl">XL</option>
               <option value="xxl">XXL</option>
+            </select>
+
+            <select
+            class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5"
+            name="place"
+            id="place"
+             >
+              <option value="0">Via Roma</option>
+              <option value="1">San Nicola</option>
+              <option value="2" selected>Cis</option>
             </select>
 
             <button

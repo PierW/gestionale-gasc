@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Generate a QR code image to point to a website URL"
+    />
+    <meta
+      name="keywords"
+      content="qr code, qr codes, qrcodes, create qr code, qr code generator, create qrcodes, make a qr code, online qr code"
+    />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js" defer></script>
+    <style>
+      #spinner {
+        display: none;
+      }
+    </style>
+    <title>Gestionale GASC</title>
+    <style>
+        .product-card__img{
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+  </head>
+  <body class="pb-10">
+    
+    <header class="p-4 mb-10 bg-black top-0 sticky">
+      <div class="max-w-5xl m-auto flex justify-between items-center">
+        <a href="/" class="text-xl font-bold text-white">Gestionale GASC</a>
+        <a href="/catalogo.html" class="text-m text-white">Catalogo</a>
+      </div>
+    </header>
+
+    <main>
+        <div
+        class="m-auto md:max-w-5xl px-4">
+            <div class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+
+                <div class="product-card w-full max-w-sm bg-white rounded-lg shadow-md">
+                    <img class="product-card__img rounded-t-lg" src="/img/product-img.jpg" alt="product image">
+                    <div class="px-5 py-5">
+
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Quantità: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">50</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">20</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">5</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Negozio: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cis</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">San Nicola</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Via Roma</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 justify-between items-center">
+                            <a href="#" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Sposta</a>
+                            <a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Vendi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card w-full max-w-sm bg-white rounded-lg shadow-md">
+                    <img class="product-card__img rounded-t-lg" src="/img/product-img.jpg" alt="product image">
+                    <div class="px-5 py-5">
+
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Quantità: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">50</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">20</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">5</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Negozio: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cis</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">San Nicola</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Via Roma</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 justify-between items-center">
+                            <a href="#" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Sposta</a>
+                            <a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Vendi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card w-full max-w-sm bg-white rounded-lg shadow-md">
+                    <img class="product-card__img rounded-t-lg" src="/img/product-img.jpg" alt="product image">
+                    <div class="px-5 py-5">
+
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Quantità: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">50</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">20</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">5</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Negozio: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cis</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">San Nicola</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Via Roma</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 justify-between items-center">
+                            <a href="#" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Sposta</a>
+                            <a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Vendi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card w-full max-w-sm bg-white rounded-lg shadow-md">
+                    <img class="product-card__img rounded-t-lg" src="/img/product-img.jpg" alt="product image">
+                    <div class="px-5 py-5">
+
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Quantità: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">50</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">20</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">5</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Negozio: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cis</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">San Nicola</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Via Roma</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 justify-between items-center">
+                            <a href="#" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Sposta</a>
+                            <a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Vendi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card w-full max-w-sm bg-white rounded-lg shadow-md">
+                    <img class="product-card__img rounded-t-lg" src="/img/product-img.jpg" alt="product image">
+                    <div class="px-5 py-5">
+
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Quantità: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">50</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">20</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">5</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Negozio: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cis</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">San Nicola</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Via Roma</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 justify-between items-center">
+                            <a href="#" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Sposta</a>
+                            <a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Vendi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card w-full max-w-sm bg-white rounded-lg shadow-md">
+                    <img class="product-card__img rounded-t-lg" src="/img/product-img.jpg" alt="product image">
+                    <div class="px-5 py-5">
+
+                         <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Quantità: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">50</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">20</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">5</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 items-center mt-2.5 mb-5">
+                            <span>Negozio: </span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cis</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">San Nicola</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Via Roma</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 justify-between items-center">
+                            <a href="#" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Sposta</a>
+                            <a href="#" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-bold rounded-lg text-m px-5 py-2.5 text-center">Vendi</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+
+  </body>
+</html>

@@ -66,7 +66,8 @@ const hideForm = () => {
 // Hide spinner
 const hideSpinner = () => {
   const spinner = document.getElementById('spinner');
-  spinner.style.display = 'none';
+
+  if(spinner) spinner.style.display = 'none';
 };
 
 // Create save button to download QR code as image
@@ -100,4 +101,4 @@ const createSaveBtn = (saveUrl) => {
 
 hideSpinner();
 
-form.addEventListener('submit', onGenerateSubmit);
+if (form) form.addEventListener('submit', onGenerateSubmit);
